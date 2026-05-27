@@ -27,6 +27,28 @@
       flex-shrink: 0;
       width: 100%;
     }
+
+    .grid-wrapper {
+      flex: 1;
+      min-height: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grid {
+      aspect-ratio: 3 / 2;
+      width: min(100%, calc(100vh * 1.5));
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      border-top: 1px solid #333;
+      border-left: 1px solid #333;
+    }
   </style>
 
 </head>
